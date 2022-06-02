@@ -18,8 +18,19 @@
 ![Food_categories](./img/Food_categories.png) 
 
 ###  2.2 Data cleaning  
-   The 5o Districts and 180 Subdistricts of Bangkok table included name of districts and subdistricts that use to get Geospatial of each location and combine into one table. But some names may be specific, which cannot be obtained from GeoPy package. Therefore, need to explore the deficiency and find another source such as google map.
+   The 50 Districts and 180 Subdistricts of Bangkok table included name of districts and subdistricts that use to get Geospatial of each location and combine into one table. But some names may be specific, which cannot be obtained from GeoPy package. Therefore, need to explore the deficiency and find another source such as google map.
 The data that obtained form Foursquare API will be in the form of JSON file and in order to be able to work, it must be adjusted to homogeneous dataset in the form of a table which will later on be used for the k-means clustering technique.
+
+## 3) Results
+###  3.1) Visual frequency Japanese and Thai restaurants
+   After creating the frequency table, we can draw a graph in descending order to compare between Thai food and Japanese food. We compared to all over Bangkok, Japanese restaurants look a little more interesting in our subdistrict, Bang Wa. This is because it has less frequency proportions and a lower order than Thai food.  
+![Thai_Food](./img/Thai_food.png) ![Japan_Food](./img/Japan_food.png)  
+
+   Form rank order venue categories table, we will see our subdistrict, Thai restaurant is the most common venue in Bang Wa and Japanese restaurants falling at sixth. This supports our previous opinion that in this area the competition of Thai restaurants is more intense than Japanese restaurants.  
+![Food_rank](./img/Food_rank.png)  
+
+   Finally display the results of the clustering on the map. Which was found to have dispersed of each group throughout Bangkok. Therefore, in the future, when there is a need to expand our branches, we can come to the area that is in the same group as ours first so as not to waste time looking around Bangkok.  
+![Cluster_map](./img/Cluster_map.png) 
 
 
 
