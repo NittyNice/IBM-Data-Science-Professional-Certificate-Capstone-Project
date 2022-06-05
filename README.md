@@ -13,8 +13,11 @@
 
 - The 50 Districts and 180 Subdistricts of Bangkok which can be obtained from Wiki page [“Khwaeng”](https://en.wikipedia.org/wiki/Khwaeng).
 - Geospatial of each location can use [GeoPy](https://geopy.readthedocs.io/en/stable/) package to get latitude and longitude base on subdistricts name.  
-![Khwaeng](./img/Khwaeng.png)
+  
+![Khwaeng](./img/Khwaeng.png)  
+
 - The [Foursquare](https://developer.foursquare.com/) API was used to add venue data for the neighborhoods such as number of restaurants, category, etc. In this project we query category to “Food” and got 88 unique venue categories.  
+  
 ![Food_categories](./img/Food_categories.png) 
 
 ###  2.2 Data cleaning  
@@ -24,12 +27,15 @@ The data that obtained form Foursquare API will be in the form of JSON file and 
 ## 3) Results
 ###  3.1) Visual frequency Japanese and Thai restaurants
    After creating the frequency table, we can draw a graph in descending order to compare between Thai food and Japanese food. We compared to all over Bangkok, Japanese restaurants look a little more interesting in our subdistrict, Bang Wa. This is because it has less frequency proportions and a lower order than Thai food.  
+  
 ![Thai_Food](./img/Thai_food.png) ![Japan_Food](./img/Japan_food.png)  
 
    Form rank order venue categories table, we will see our subdistrict, Thai restaurant is the most common venue in Bang Wa and Japanese restaurants falling at sixth. This supports our previous opinion that in this area the competition of Thai restaurants is more intense than Japanese restaurants.  
+  
 ![Food_rank](./img/Food_rank.png)  
 
    Finally display the results of the clustering on the map. Which was found to have dispersed of each group throughout Bangkok. Therefore, in the future, when there is a need to expand our branches, we can come to the area that is in the same group as ours first so as not to waste time looking around Bangkok.  
+  
 ![Cluster_map](./img/Cluster_map.png) 
 
 
